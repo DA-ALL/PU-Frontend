@@ -1,0 +1,22 @@
+{
+  "name": "pu-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel home.html",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "rollup-plugin-sass-migrator": "^1.0.5",
+    "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

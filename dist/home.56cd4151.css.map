@@ -1,0 +1,1 @@
+{"version":3,"sources":["../assets/css/home.scss"],"names":[],"mappings":"AACI;EACI","file":"home.56cd4151.css","sourceRoot":"../public","sourcesContent":[".main {\n    .text{\n        font-size: 120px;\n    }\n}"]}
