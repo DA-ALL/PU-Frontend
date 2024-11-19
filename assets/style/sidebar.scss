@@ -1,8 +1,145 @@
 .sidebar-nav {
     position: absolute;
-    width: 80px;
-    background-color: white;
+    display: flex;
+    padding: 20px 14px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
     border-radius: 16px;
     height: 95%;
-    box-shadow: 0px 4px 26px 0px #C7B8E1;
+    gap: 5px;
+    box-shadow: 0px 4px 26px 0px #c7b8e1;
+
+    .project-logo {
+
+        img {
+            width: 52px;
+            cursor: pointer;
+        }
+    }
+
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        padding: 8px;
+        gap: 4px;
+
+        &:hover {
+            .nav-title {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+
+        &.home {
+            .icon-wrapper {
+                img {
+                    width: 21px;
+                    height: 20px;
+                }
+            }
+            &:hover {
+                .icon-wrapper img {
+                  width: 23px;
+                  height: 22px;
+                }
+              }
+
+            &.active {
+                .icon-wrapper {
+                    img {
+                        width: 23px;
+                        height: 22px;
+                    }
+                }
+        
+            }
+        }
+
+        &.board {
+            .icon-wrapper {
+                img {
+                    width: 23px;
+                    height: 22px;
+                }
+            }
+            &:hover {
+                .icon-wrapper img {
+                  width: 25px;
+                  height: 24px;
+                }
+              }
+
+            &.active {
+                .icon-wrapper {
+                    img {
+                        width: 25px;
+                        height: 24px;
+                    }
+                }
+        
+            }
+        }
+
+        &.calendar {
+            .icon-wrapper {
+                img {
+                    width: 23px;
+                    height: 22px;
+                }
+            }
+            &:hover {
+                .icon-wrapper img {
+                  width: 25px;
+                  height: 24px;
+                }
+              }
+
+            &.active {
+                .icon-wrapper {
+                    img {
+                        width: 25px;
+                        height: 24px;
+                    }
+                }
+        
+            }
+        }
+
+        &.active { 
+            .icon-wrapper {
+                background-color: #DCD5E8;
+            }
+
+            .nav-title {
+                font-size: 12px !important;
+                font-weight: 700 !important;
+                color: #4E2C8E;
+            }
+
+        }
+
+        .icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: #DCD5E8;
+            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+        }
+
+        .nav-title {
+            height: 15px;
+            font-size: 11px;
+            color: #4E2C8E;
+        }
+    }
+
+    
+
 }
