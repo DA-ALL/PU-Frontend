@@ -3,7 +3,35 @@ $(document).ready(function () {
         <div class="messagebar-nav" id="messagebar-nav">
             <div class="project-title">2024 플업 프로젝트</div>
 
-            <div class="message-item channel"></div>
+            <div class="message-item channel">
+                <div class="message-item-title">
+                    <div class="icon-arrow"></div>
+                    <div class="message-title">채널</div>
+                </div>
+
+                <div class="message-item-channel">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                    </div>
+                    <div class="channel-title">개발자_채널</div>
+                </div>
+
+                <div class="message-item-channel">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                    </div>
+                    <div class="channel-title">개발자_채널</div>
+                </div>
+
+                <div class="message-item-channel">
+                    <div class="circle">
+                        <div class="inner-circle"></div>
+                    </div>
+                    <div class="channel-title">개발자_채널</div>
+                </div>
+            </div>
+
+            
 
             <div class="resizer" id="resizer"></div>
         </div>
