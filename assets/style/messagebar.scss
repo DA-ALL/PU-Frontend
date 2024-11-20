@@ -1,0 +1,36 @@
+.messagebar-nav {
+    position: relative;
+    display: flex;
+    padding: 20px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F1F1FB;
+    border-radius: 16px;
+    min-width: 230px;
+    height: calc(100% - 30px);
+    gap: 5px;
+    box-shadow: 0px 4px 26px 0px #c7b8e1;
+    resize: horizontal; /* 수평으로 크기 조절 가능 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 가능 */
+    
+
+    .project-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #4e2c8e;
+        width: 100%;
+        height: 32px;
+    }
+
+    .resizer {
+        width: 10px; /* 드래그 핸들 너비 */
+        cursor: ew-resize; /* 커서 모양 */
+        position: absolute; /* 절대 위치 */
+        right: 0; /* 오른쪽에 위치 */
+        top: 0; /* 상단에 위치 */
+        height: 100%; /* 전체 높이 */
+    }
+}
