@@ -71,12 +71,27 @@ $(document).ready(function () {
 
         $('.nav-item').removeClass('active');
 
+        if (navType === "home") {
+            $('#board').hide();
+            $('#calendar').hide();
+            $('#home').show();
+        } else if (navType === "calendar") {
+            $('#board').hide();
+            $('#home').hide();
+            $('#calendar').show();
+        } else if (navType === "board") {
+            $('#board').show();
+            $('#calendar').hide();
+            $('#home').hide();
+        }
+
         $('.nav-item').each(function() {
             if (!$(this).hasClass('active')) {
                 const navType = $(this).data('type');
                 let originalImage;
 
                 if (navType === "home") {
+                    console.log("test");
                     originalImage = "https://github.com/user-attachments/assets/6baba09c-1c72-442e-8c97-33822453ddb1";
                 } else if (navType === "calendar") {
                     originalImage = "https://github.com/user-attachments/assets/6cb1efce-3e45-45c1-9e53-296d1d2704bd";
